@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Home from "./components/Home";
+import { Routes, Route, Link } from "react-router-dom";
+import Apropos from "./components/Apropos";
+import PageProduit from "./components/PageProduit";
+import ErrorPage from "./components/ErrorPage";
+<style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+</style>;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Apropos" element={<Apropos />} />
+        <Route path="/:id" element={<PageProduit />} />
+        <Route path="/404" element={<ErrorPage />} />
+        <Route path="*" element={<Link to="/404" replace />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,38 @@
+.detailsLogement > .dropdown {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+  background-color: #f6f6f6;
+  color: #ff6060;
+  font-size: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.dropdown h2 {
+  width: 100%;
+  color: white;
+  padding: 20px 0px 20px 25px;
+  margin: 0;
+}
+.dropdown p {
+  padding: 0px 20px;
+}
+li {
+  list-style-type: none;
+}
+
+@media all and (max-width: 992px) {
+  .dropdownLarge h2 {
+    font-size: 20px;
+  }
+  .undropped h2 {
+    font-size: 20px;
+  }
+  .dropdownLarge p {
+    font-size: 20px;
+  }
+  .dropdown h2 {
+    font-size: 20px;
+  }
+}

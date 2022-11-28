@@ -1,0 +1,44 @@
+.banner {
+  justify-content: center;
+  display: flex;
+  border-radius: 25px;
+  height: 180px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  margin-bottom: 40px;
+  background: darkgrey;
+  align-items: center;
+}
+
+.banner p {
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  position: absolute;
+}
+
+.banner img {
+  width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    mix-blend-mode: multiply;
+    height: inherit;
+    object-position: left;
+}
+@media all and (max-width: 992px) {
+  .banner {
+    position: relative;
+  }
+  .banner p {
+    font-size: 33px;
+    width: 90%;
+    /*
+    /* margin-right: 67px; */
+    /* text-align: left;
+    width: inherit;
+    margin-left: 21px;
+  } */
+  }
+}

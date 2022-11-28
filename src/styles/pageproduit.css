@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: Montserrat;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+h2 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.infos {
+  display: flex;
+  margin: 0px 80px;
+  margin-top: 30px;
+}
+.host {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.rating {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.infos img {
+  border-radius: 100px;
+  height: 100px;
+}
+.infoshost {
+  width: 30%;
+}
+.infoshost h2 {
+  width: min-content;
+  margin-right: 20px;
+  color: #ff6060;
+}
+.infosLogement {
+  width: 70%;
+  color: #ff6060;
+}
+.infosLogement li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #ff6060;
+  color: white;
+  padding: 9px 30px;
+  border-radius: 17px;
+  margin-bottom: 10px;
+}
+.infosLogement ul {
+  padding: 0px;
+  margin-top: 30px;
+}
+.detailsLogement {
+  display: flex;
+  margin: 0px 55px;
+}
+
+.rating img {
+  width: 40px;
+  height: 70px;
+}
+/* .title img {
+  width: 30px;
+  padding-right: 15px;
+
+} */
+/* .dropdown__title {
+  display: flex;
+  background-color: #ff6060;
+  border-radius: 10px;
+  
+} */
+.detailsLogement .undropped {
+  display: flex;
+  background-color: #ff6060;
+  border-radius: 10px;
+  width: 50%;
+  height: fit-content;
+  align-items: center;
+  margin: 0px 20px;
+  font-size: 20px;
+}
+
+/* .dropdown__title__undropped h2 {
+  width: 100%;
+  color: white;
+  padding: 20px 0px 20px 25px;
+  margin: 0;
+} */
+/* .dropdown__title__undropped img {
+    width: 30px;
+    margin: 15px;
+    transition: transform 2s;
+
+    transition: 2s;
+  } */
+/* .dropdown__title__undropped img{
+    transform: rotate(180deg);
+    
+}
+  .dropdown__title img  {
+    rotate: (180deg);
+} */
+.carousel {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  height: 450px;
+  width: 95%;
+  margin: auto;
+}
+.carousel img {
+  width: inherit;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.flecheCarousel {
+  font-size: 60px;
+  color: white;
+  cursor: pointer;
+}
+.Droite {
+  position: absolute;
+  top: 42%;
+  right: 7%;
+}
+.Gauche {
+  position: absolute;
+  top: 42%;
+  left: 6%;
+}
+.indexPhoto {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.Droite img {
+  width: 50px;
+  rotate: 90deg;
+}
+.Gauche img {
+  width: 50px;
+  rotate: 270deg;
+}
+
+@media all and (max-width: 992px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+
+  .infos {
+    flex-direction: column;
+    display: flex;
+    margin: 0px 30px;
+    margin-top: 20px;
+  }
+  .infosLogement {
+    width: 100%;
+  }
+  .infoshost h2 {
+    font-size: 14px;
+  }
+  .infoshost {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .infosLogement li {
+    font-size: 12px;
+  }
+  .detailsLogement {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .detailsLogement > .dropdown {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+  .detailsLogement > .undropped {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .rating img {
+    width: 15%;
+  }
+}

@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+.errorPage {
+  width: 60%;
+  text-align: center;
+  color: #ff6060;
+  margin: auto;
+}
+
+.errorPage h1 {
+  font-size: 288px;
+  font-weight: 700;
+  margin: 0;
+}
+.errorPage p {
+  font-size: 36px;
+  font-weight: 500;
+}
+.errorPage a {
+  font-size: 18px;
+  color: #ff6060;
+}
+@media all and (max-width: 992px) {
+  .errorPage {
+    width: auto;
+    margin: 60px 0px;
+  }
+  .errorPage h1 {
+    font-size: 180px;
+    font-weight: 700;
+    margin: auto;
+  }
+  .errorPage p {
+    font-size: 30px;
+  }
+}
